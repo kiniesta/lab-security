@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Generador de Contraseñas Seguras",
+  "version": "1.0",
+  "description": "Generador rápido y seguro de contraseñas con entropía criptográfica.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Generar Contraseña"
+  }
+}

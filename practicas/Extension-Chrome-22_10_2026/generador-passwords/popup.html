@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <h2>PassGen Pro</h2>
+    
+    <!-- Visualizador de contraseña -->
+    <div class="result-box">
+      <input type="text" id="password" readonly placeholder="Pulsa generar">
+      <button id="copyBtn" title="Copiar al portapapeles">📋</button>
+    </div>
+    <span id="copiedNotice" class="hidden">¡Copiado!</span>
+
+    <!-- Indicador de longitud -->
+    <div class="setting-row">
+      <label for="lengthSlider">Longitud: <span id="lengthValue">16</span></label>
+      <input type="range" id="lengthSlider" min="8" max="64" value="16">
+    </div>
+
+    <!-- Opciones de caracteres -->
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="uppercase" checked> Mayúsculas (A-Z)</label>
+      <label><input type="checkbox" id="lowercase" checked> Minúsculas (a-z)</label>
+      <label><input type="checkbox" id="numbers" checked> Números (0-9)</label>
+      <label><input type="checkbox" id="symbols" checked> Símbolos (!@#$%...)</label>
+    </div>
+
+    <!-- Botón de acción -->
+    <button id="generateBtn" class="primary-btn">Generar Contraseña</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
