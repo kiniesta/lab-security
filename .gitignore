@@ -1,0 +1,47 @@
+# ==============================
+# Seguridad & Credenciales (CRÍTICO)
+# ==============================
+*.pem
+*.key
+*.crt
+*.csr
+*.pfx
+*.p12
+.env
+.env.*
+!*.env.example
+secrets/
+credentials/
+id_rsa*
+
+# ==============================
+# Capturas de Red y Logs
+# ==============================
+*.pcap
+*.pcapng
+*.cap
+*.log
+
+# ==============================
+# Virtualización y Paquetes
+# ==============================
+*.ova
+*.ovf
+*.vmdk
+*.iso
+*.box
+.vagrant/
+
+# ==============================
+# Ficheros temporales y de SO / IDE
+# ==============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==============================
+# Lenguajes / Scripts
+# ==============================
+__pycache__/
+*.py[cod]
